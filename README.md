@@ -1,5 +1,7 @@
 # react-simple-sidenav [![npm](https://img.shields.io/npm/v/react-simple-sidenav.svg?maxAge=000)](https://www.npmjs.com/package/react-simple-sidenav) [![npm](https://img.shields.io/npm/dm/react-simple-sidenav.svg?maxAge=000)](https://www.npmjs.com/package/react-simple-sidenav)
 
+Notice! This module is forked from Gaurav Chikhale. All credit goes to original authors. To see original please go [here](https://github.com/gauravchl/react-simple-sidenav)
+
 Simple, light weight(4.78 kB), fully customizable React component for side navigation.
 
 Inspired by [Side Navigation Bar TL;DW episode of Supercharged](https://youtu.be/Mhnj3PiPnZw)
@@ -37,6 +39,7 @@ title      | node | Will display on top
 items      | [node] | Array of items in navigation list below the title
 showNav | boolean | Control whether to open or close side navigation
 openFromRight | boolean | This opens navigation from right side of the window, default is false (from left side).
+dockBar | boolean | If true, Stops Menu from performing on Touch Events. Makes sidebar Static.
 onShowNav | function | Trigger when navigation opens
 onHideNav | function | Trigger when navigation close
 children  | node | Content of navigation. If supplying children to SideNav, title and items will be ignore and replaced by children
