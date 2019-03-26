@@ -20,9 +20,13 @@ class SideNav extends React.Component {
   }
 
   onTouchStart(evt) {
+    const {dockBar} = this.props;
+
     this.startX = evt.touches[0].pageX;
     this.currentX = this.startX;
-    this.touchingSideNav = true;
+    if(!dockBar){
+      this.touchingSideNav = true;
+    }
     requestAnimationFrame(this.update);
   }
 
@@ -174,6 +178,7 @@ SideNav.propTypes = {
   items:          PropTypes.arrayOf(PropTypes.node),
   showNav:        PropTypes.bool,
   openFromRight:  PropTypes.bool,
+  dockBar:        PropTypes.bool,
   onHideNav:      PropTypes.func,
   onShowNav:      PropTypes.func,
 }
